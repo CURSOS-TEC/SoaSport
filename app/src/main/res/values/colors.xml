@@ -5,4 +5,10 @@
     <color name="launcher.theme.colorPrimary">#165044</color>
     <color name="launcher.theme.colorPrimaryDark">#0b2817</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="dark.imperial.blue">#004E64</color>
+    <color name="sea.foam.green">#B2DBBF</color>
+    <color name="rich.electric.blue">#00A5CF</color>
+    <color name="jungle.green">#25A18E</color>
+    <color name="green.sheen">#70C1B3</color>
 </resources>
