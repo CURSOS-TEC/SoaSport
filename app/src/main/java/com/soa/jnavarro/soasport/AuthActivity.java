@@ -10,7 +10,7 @@ public class AuthActivity extends AppCompatActivity {
     private EditText passwordEditText;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setTheme(R.style.AppTheme);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auth);
     }

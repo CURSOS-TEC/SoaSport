@@ -3,9 +3,10 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/launcher.theme.colorPrimary</item>
+        <item name="colorPrimaryDark">@color/sea.foam.green</item>
+        <item name="colorAccent">@color/sea.foam.green</item>
+        <item name="android:windowBackground">@drawable/screen</item>
     </style>
 
     <!-- Base application theme. -->
@@ -13,7 +14,7 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/launcher.theme.colorPrimary</item>
         <item name="colorPrimaryDark">@color/sea.foam.green</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/sea.foam.green</item>
         <item name="android:windowBackground">@drawable/screen</item>
     </style>
 
