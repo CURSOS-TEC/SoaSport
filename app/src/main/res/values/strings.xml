@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SoaSport</string>
+    <string name="email.hint">Email</string>
+    <string name="password.hint">Password</string>
+    <string name="login">Login</string>
+    <string name="create.account">No account yet? Create one</string>
 </resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "381711452323",
+    "firebase_url": "https://soasport2018.firebaseio.com",
+    "project_id": "soasport2018",
+    "storage_bucket": "soasport2018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381711452323:android:a127d9057f913ef1",
+        "android_client_info": {
+          "package_name": "com.soa.jnavarro.soasport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381711452323-51brjtdidufv9n3gh7th01vrbq0j9j66.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.soa.jnavarro.soasport",
+            "certificate_hash": "16847e7adec4f9f3110564f25248978e08b14077"
+          }
+        },
+        {
+          "client_id": "381711452323-5pj7gkvdeemfl6qfrouq92g91j95kmed.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXGuWijxhqKu2vmzKiLvJz9ijXzvAnjqg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381711452323-5pj7gkvdeemfl6qfrouq92g91j95kmed.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
