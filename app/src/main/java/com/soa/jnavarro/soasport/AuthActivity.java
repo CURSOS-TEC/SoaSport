@@ -1,5 +1,6 @@
 package com.soa.jnavarro.soasport;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -52,6 +53,8 @@ public class AuthActivity extends AppCompatActivity {
             Toast.makeText(AuthActivity.this, "Not Logged.", Toast.LENGTH_SHORT).show();
         }else {
             Toast.makeText(AuthActivity.this, "Logged.", Toast.LENGTH_SHORT).show();
+            Intent myIntent = new Intent(AuthActivity.this, MainActivity.class);
+            AuthActivity.this.startActivity(myIntent);
         }
 
 
@@ -72,6 +75,8 @@ public class AuthActivity extends AppCompatActivity {
                             FirebaseUser user = mAuth.getCurrentUser();
                             //updateUI(user);
                             Toast.makeText(AuthActivity.this, "Authentication successful.", Toast.LENGTH_SHORT).show();
+                            Intent myIntent = new Intent(AuthActivity.this, MainActivity.class);
+                            AuthActivity.this.startActivity(myIntent);
                         } else {
                             // If sign in fails, display a message to the user.
                             //Log.w(TAG, "signInWithEmail:failure", task.getException());

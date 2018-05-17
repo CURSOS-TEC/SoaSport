@@ -6,7 +6,7 @@
         <item name="colorPrimary">@color/launcher.theme.colorPrimary</item>
         <item name="colorPrimaryDark">@color/sea.foam.green</item>
         <item name="colorAccent">@color/sea.foam.green</item>
-        <item name="android:windowBackground">@drawable/screen</item>
+        <item name="android:windowBackground">@drawable/auth_background</item>
     </style>
 
     <!-- Base application theme. -->
