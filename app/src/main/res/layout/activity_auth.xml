@@ -67,12 +67,28 @@
                     android:background="@color/dark.imperial.blue"
                     />
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
                     <com.google.android.gms.common.SignInButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/googleBtn">
+                            android:id="@+id/googleBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
 
                     </com.google.android.gms.common.SignInButton>
+
+
+                    <com.facebook.login.widget.LoginButton
+                        android:id="@+id/faceButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                         />
+
+
+                </LinearLayout>
 
 
                 <TextView android:id="@+id/link.signup"

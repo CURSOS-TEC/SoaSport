@@ -25,7 +25,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
-
+import com.facebook.FacebookSdk;
+import com.facebook.appevents.AppEventsLogger;
 public class AuthActivity extends AppCompatActivity {
 
     private EditText emailEditText;
@@ -47,6 +48,9 @@ public class AuthActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auth);
+
+
+
         emailEditText = (EditText) findViewById(R.id.input_email);
         passwordEditText = (EditText) findViewById(R.id.input_password);
         loginBtton = (Button) findViewById(R.id.btn_login);
@@ -60,6 +64,8 @@ public class AuthActivity extends AppCompatActivity {
         });
 
         mAuth = FirebaseAuth.getInstance();
+
+
 
         // Configure Google Sign In
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -92,9 +98,6 @@ public class AuthActivity extends AppCompatActivity {
             Intent myIntent = new Intent(AuthActivity.this, MainActivity.class);
             AuthActivity.this.startActivity(myIntent);
         }
-
-
-        //updateUI(currentUser);
     }
 
     public void login (View view){
