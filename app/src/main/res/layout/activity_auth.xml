@@ -67,6 +67,13 @@
                     android:background="@color/dark.imperial.blue"
                     />
 
+                    <com.google.android.gms.common.SignInButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/googleBtn">
+
+                    </com.google.android.gms.common.SignInButton>
+
 
                 <TextView android:id="@+id/link.signup"
                     android:layout_width="fill_parent"
