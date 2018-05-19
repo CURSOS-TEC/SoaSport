@@ -6,5 +6,6 @@
     <string name="create.account">No account yet? Create one</string>
     <string name="facebook_app_id">524433627974443</string>
     <string name="fb_login_protocol_scheme">fb524433627974443</string>
+    <string name="logOut">Logout</string>
 
 </resources>
