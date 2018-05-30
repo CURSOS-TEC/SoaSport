@@ -1,11 +1,14 @@
 <resources>
     <string name="app_name">SoaSport</string>
+    <string name="name.hint">Name</string>
     <string name="email.hint">Email</string>
     <string name="password.hint">Password</string>
+    <string name="password.hint.confirm">Confirm Password</string>
     <string name="login">Login</string>
     <string name="create.account">No account yet? Create one</string>
     <string name="facebook_app_id">524433627974443</string>
     <string name="fb_login_protocol_scheme">fb524433627974443</string>
     <string name="logOut">Logout</string>
+    <string name="register"> Register </string>
 
 </resources>
