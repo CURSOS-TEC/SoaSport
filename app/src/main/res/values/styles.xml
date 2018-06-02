@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/launcher.theme.colorPrimary</item>
         <item name="colorPrimaryDark">@color/sea.foam.green</item>
@@ -10,7 +10,7 @@
     </style>
 
     <!-- Base application theme. -->
-    <style name="AppTheme.Launcher" parent="Theme.AppCompat.NoActionBar">
+    <style name="AppTheme.Launcher" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/launcher.theme.colorPrimary</item>
         <item name="colorPrimaryDark">@color/dark.imperial.blue</item>

@@ -15,7 +15,7 @@
       },
       "oauth_client": [
         {
-          "client_id": "381711452323-51brjtdidufv9n3gh7th01vrbq0j9j66.apps.googleusercontent.com",
+          "client_id": "381711452323-g527qesirpf6fe0o7ig2pbrd323l830o.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.soa.jnavarro.soasport",
@@ -25,11 +25,15 @@
         {
           "client_id": "381711452323-5pj7gkvdeemfl6qfrouq92g91j95kmed.apps.googleusercontent.com",
           "client_type": 3
+        },
+        {
+          "client_id": "381711452323-5pj7gkvdeemfl6qfrouq92g91j95kmed.apps.googleusercontent.com",
+          "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBXGuWijxhqKu2vmzKiLvJz9ijXzvAnjqg"
+          "current_key": "AIzaSyDO8KKe3mU2t-y5DjIrhccsrpcEMwScNGw"
         }
       ],
       "services": {

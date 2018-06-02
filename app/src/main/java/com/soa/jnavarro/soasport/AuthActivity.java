@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ViewAnimator;
 
@@ -55,6 +56,10 @@ public class AuthActivity extends AppCompatActivity {
     private LoginButton facebookloginButton;
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> feature/AuthTheme
 
 
 
@@ -186,6 +191,7 @@ public class AuthActivity extends AppCompatActivity {
                             //Log.w(TAG, "signInWithEmail:failure", task.getException());
                             Toast.makeText(AuthActivity.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
+                            Log.w("Debug",mAuth.getCurrentUser().getDisplayName());
                             //updateUI(null);
                         }
 
@@ -237,11 +243,19 @@ public class AuthActivity extends AppCompatActivity {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
+<<<<<<< HEAD
 
 
         // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
         if (requestCode == RC_SIGN_IN) {
             callBackManager.onActivityResult(requestCode, resultCode, data);
+=======
+        callBackManager.onActivityResult(requestCode, resultCode, data);
+
+        // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
+        if (requestCode == RC_SIGN_IN) {
+
+>>>>>>> feature/AuthTheme
 
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
             try {

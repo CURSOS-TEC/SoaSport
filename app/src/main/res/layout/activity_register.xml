@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AuthActivity">
+    tools:context=".RegisterActivity">
     <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http>://schemas.android.com/tools"
@@ -29,6 +29,19 @@
                     android:layout_height="72dp"
                     android:layout_marginBottom="24dp"
                     android:layout_gravity="center_horizontal" />
+
+                <!-- Nombre -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+                    <EditText android:id="@+id/input_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="@string/name.hint" />
+                </android.support.design.widget.TextInputLayout>
 
                 <!-- Correo Electrónico -->
                 <android.support.design.widget.TextInputLayout
@@ -56,6 +69,20 @@
                         android:hint="@string/password.hint"/>
                 </android.support.design.widget.TextInputLayout>
 
+
+                <!-- Etiqueta de contraseña -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+                    <EditText android:id="@+id/input_password_confirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:hint="@string/password.hint.confirm"/>
+                </android.support.design.widget.TextInputLayout>
+
                 <android.support.v7.widget.AppCompatButton
                     android:id="@+id/btn_login"
                     android:layout_width="fill_parent"
@@ -63,52 +90,11 @@
                     android:layout_marginTop="24dp"
                     android:layout_marginBottom="24dp"
                     android:padding="12dp"
-                    android:text="@string/login"
+                    android:text="@string/register"
                     android:background="@color/dark.imperial.blue"
                     />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
-                    <com.google.android.gms.common.SignInButton
-<<<<<<< HEAD
-                            android:id="@+id/googleBtn"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-=======
-                        android:id="@+id/googleBtn"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
->>>>>>> feature/AuthTheme
-
-                    </com.google.android.gms.common.SignInButton>
-
-
-                    <com.facebook.login.widget.LoginButton
-                        android:id="@+id/faceButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-<<<<<<< HEAD
-                         />
-=======
-                        android:layout_margin="4dp" />
->>>>>>> feature/AuthTheme
-
-                    <TextView
-                        android:id="@+id/link.signup"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="24dp"
-
-                        android:text="@string/create.account"
-                        android:textSize="16dip"
-                        android:layout_margin="4dp"
-                       />
-
-
-                </LinearLayout>
 
 
             </LinearLayout>
