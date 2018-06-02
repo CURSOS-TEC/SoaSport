@@ -56,10 +56,7 @@ public class AuthActivity extends AppCompatActivity {
     private LoginButton facebookloginButton;
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> feature/AuthTheme
 
 
 
@@ -243,19 +240,10 @@ public class AuthActivity extends AppCompatActivity {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-<<<<<<< HEAD
-
-
-        // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
-        if (requestCode == RC_SIGN_IN) {
-            callBackManager.onActivityResult(requestCode, resultCode, data);
-=======
         callBackManager.onActivityResult(requestCode, resultCode, data);
 
         // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
         if (requestCode == RC_SIGN_IN) {
-
->>>>>>> feature/AuthTheme
 
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
             try {

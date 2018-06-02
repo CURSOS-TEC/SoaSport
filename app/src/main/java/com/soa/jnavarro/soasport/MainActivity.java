@@ -1,17 +1,16 @@
 package com.soa.jnavarro.soasport;
 
-<<<<<<< HEAD
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-=======
+
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
->>>>>>> feature/AuthTheme
+
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -26,11 +25,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> feature/AuthTheme
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if (user != null) {
             // Name, email address, and profile photo Url
@@ -48,10 +42,6 @@ public class MainActivity extends AppCompatActivity {
 
             Toast.makeText(MainActivity.this, user.getEmail().toString(),
                     Toast.LENGTH_SHORT).show();
-<<<<<<< HEAD
-        }
-=======
-
 
         }
 
@@ -72,6 +62,5 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
->>>>>>> feature/AuthTheme
     }
 }
