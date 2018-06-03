@@ -1,5 +1,11 @@
 package com.soa.jnavarro.soasport.utils.soa.soapost;
 
+import android.util.Log;
+
+import org.json.JSONObject;
+
+import java.util.concurrent.ExecutionException;
+
 public class SoaPost {
     private String mId;
     private String mDescription;
@@ -7,6 +13,18 @@ public class SoaPost {
     private String mURImage;
     private String mTitle;
     private String mRating;
+
+    /**
+     * With no arguments
+     */
+    public  SoaPost (){
+        this.mId = "";
+        this.mDescription = "";
+        this.mAuthor = "";
+        this.mURImage = "";
+        this.mTitle = "";
+        this.mRating = "";
+    }
 
     /**
      * Constructor of
@@ -22,7 +40,10 @@ public class SoaPost {
         this.mURImage = mURImage;
         this.mTitle = mTitle;
         this.mRating = mRating;
+
     }
+
+
 
     /**
      *
@@ -70,5 +91,10 @@ public class SoaPost {
      */
     public String getmRating(){
         return mRating;
+    }
+
+    @Override
+    public String toString(){
+        return (this.mAuthor + " " + this.mDescription + " " + this.mTitle );
     }
 }

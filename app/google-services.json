@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "381711452323-up80c26qqr5uf14ev582diqoo1bv2bsm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.soa.jnavarro.soasport",
+            "certificate_hash": "c30ad233005ff7b6d587c60e7619517753fc12f3"
+          }
+        },
+        {
           "client_id": "381711452323-g527qesirpf6fe0o7ig2pbrd323l830o.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

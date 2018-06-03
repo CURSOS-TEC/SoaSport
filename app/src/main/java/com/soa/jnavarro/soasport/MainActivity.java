@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.Adapter;
 import android.widget.Button;
 
 import android.widget.Toast;
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     //Reference to the  to the firebase DataBase
     DatabaseReference myRef = DBManager.getInstance().getDataBaseReference("news");
 
+    private Button mTestBtn;
 
 
 
@@ -63,14 +65,25 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-       DBManager.getInstance().setPostEventListener(myRef,mSoaPostList,MainActivity.this);
+        mTestBtn = (Button) findViewById(R.id.testBtn);
+        mTestBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mSoaPostList.add(new SoaPost( "id1",  "mDescription 1 ",
+                        "mAuthor 1", "mURImage 1", "mTitle 1", "mRating 1"));
+                mAdapter.notifyDataSetChanged();
+            }
+        });
 
         UserAssistance.getInstance().wellcomeUser(MainActivity.this);
 
         this.mAdapter = new SoaPostAdapter(this,mSoaPostList);
+
         mRecyclerView.setAdapter(mAdapter);
 
-        mSoaPostList.add(new SoaPost( "id1",  "mDescription 1 ",
+
+        DBManager.getInstance().setPostEventListener(myRef, mAdapter, mSoaPostList,MainActivity.this);
+        /*mSoaPostList.add(new SoaPost( "id1",  "mDescription 1 ",
                 "mAuthor 1", "mURImage 1", "mTitle 1", "mRating 1"));
 
         mSoaPostList.add(new SoaPost( "id2",  "mDescription 2 ",
@@ -80,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                 "mAuthor 2", "mURImage 2", "mTitle 2", "mRating 2"));
 
         mSoaPostList.add(new SoaPost( "id3",  "mDescription 2 ",
-                "mAuthor 2", "mURImage 2", "mTitle 2", "mRating 2"));
+                "mAuthor 2", "mURImage 2", "mTitle 2", "mRating 2"));*/
 
     }
 }
