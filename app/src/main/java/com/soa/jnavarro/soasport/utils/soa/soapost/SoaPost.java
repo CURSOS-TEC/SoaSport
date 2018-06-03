@@ -1,4 +1,4 @@
-package com.soa.jnavarro.soasport.utils.posts;
+package com.soa.jnavarro.soasport.utils.soa.soapost;
 
 public class SoaPost {
     private String mId;

@@ -1,4 +1,4 @@
-package com.soa.jnavarro.soasport.utils.posts;
+package com.soa.jnavarro.soasport.utils.soa.soapost;
 
 import android.content.Context;
 import android.support.annotation.NonNull;

@@ -7,6 +7,7 @@ import android.widget.Toast;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.soa.jnavarro.soasport.MainActivity;
+import com.soa.jnavarro.soasport.utils.soa.soaalerts.SoaAlert;
 
 public class UserAssistance {
     private static final UserAssistance ourInstance = new UserAssistance();
@@ -38,8 +39,9 @@ public class UserAssistance {
             // FirebaseUser.getToken() instead.
             String uid = user.getUid();
 
-            Toast.makeText(ctx, user.getEmail().toString(),
-                    Toast.LENGTH_SHORT).show();
+            //Toast a message using  the SoaAlert class.
+            SoaAlert.getInstance().ToastMessage(ctx,user.getEmail().toString());
+
 
         }
     }
