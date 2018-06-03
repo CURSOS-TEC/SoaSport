@@ -83,17 +83,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         DBManager.getInstance().setPostEventListener(myRef, mAdapter, mSoaPostList,MainActivity.this);
-        /*mSoaPostList.add(new SoaPost( "id1",  "mDescription 1 ",
-                "mAuthor 1", "mURImage 1", "mTitle 1", "mRating 1"));
 
-        mSoaPostList.add(new SoaPost( "id2",  "mDescription 2 ",
-                "mAuthor 2", "mURImage 2", "mTitle 2", "mRating 2"));
-
-        mSoaPostList.add(new SoaPost( "id3",  "mDescription 2 ",
-                "mAuthor 2", "mURImage 2", "mTitle 2", "mRating 2"));
-
-        mSoaPostList.add(new SoaPost( "id3",  "mDescription 2 ",
-                "mAuthor 2", "mURImage 2", "mTitle 2", "mRating 2"));*/
 
     }
 }
