@@ -6,9 +6,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.soa.jnavarro.soasport.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -19,6 +21,7 @@ public class SoaPostAdapter extends RecyclerView.Adapter<SoaPostAdapter.SoaPostV
         TextView mtextViewTitle;
         TextView mtextViewRating;
         TextView mtextViewAlt;
+        ImageView mImageView;
 
         public SoaPostViewHolder(View itemView) {
             super(itemView);
@@ -26,6 +29,8 @@ public class SoaPostAdapter extends RecyclerView.Adapter<SoaPostAdapter.SoaPostV
             mtextViewTitle = itemView.findViewById(R.id.textViewTitle);
             mtextViewRating = itemView.findViewById(R.id.textViewRating);
             mtextViewAlt = itemView.findViewById(R.id.textViewAlt);
+            mImageView = itemView.findViewById(R.id.imageView);
+
         }
     }
 
@@ -63,9 +68,12 @@ public class SoaPostAdapter extends RecyclerView.Adapter<SoaPostAdapter.SoaPostV
     public void onBindViewHolder(@NonNull SoaPostViewHolder holder, int position) {
         SoaPost soapost = this.mSoaPostList.get(position);
         holder.mtextViewTitle.setText(soapost.getmTitle());
-        holder.mtextViewAlt.setText(soapost.getmTitle());
+        holder.mtextViewAlt.setText(soapost.getmAuthor());
         holder.mtextViewRating.setText(soapost.getmRating());
         holder.mtextViewShortDesc.setText(soapost.getmDescription());
+        loadImageFromURL(mContext,holder.mImageView,soapost.getmURImage());
+
+
     }
 
     /**
@@ -75,5 +83,24 @@ public class SoaPostAdapter extends RecyclerView.Adapter<SoaPostAdapter.SoaPostV
     @Override
     public int getItemCount() {
         return this.mSoaPostList.size();
+    }
+
+
+
+    public void loadImageFromURL(Context context, ImageView imageView, String  URL){
+        Picasso.with(context).load(URL).placeholder(R.mipmap.ic_launcher)
+                .error(R.mipmap.ic_launcher)
+                .into(imageView,new com.squareup.picasso.Callback(){
+
+                    @Override
+                    public void onSuccess() {
+
+                    }
+
+                    @Override
+                    public void onError() {
+
+                    }
+                });
     }
 }
