@@ -1,16 +1,19 @@
 package com.soa.jnavarro.soasport;
 
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import android.content.Intent;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Adapter;
 import android.widget.Button;
 
 import android.widget.Toast;
+
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
@@ -32,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<SoaPost> mSoaPostList = new ArrayList<SoaPost>();
     //Reference to the  to the firebase DataBase
     DatabaseReference myRef = DBManager.getInstance().getDataBaseReference("news");
+
 
     private Button mTestBtn;
 

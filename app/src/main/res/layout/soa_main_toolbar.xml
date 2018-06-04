@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.ActionBarContainer
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/dark.imperial.blue"
+    android:layout_height="50dp"
+    android:id="@+id/main_toolbar">
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="50dp"
@@ -34,3 +42,4 @@
         android:src="@android:drawable/ic_menu_rotate" />
 
 </RelativeLayout>
+</android.support.v7.widget.ActionBarContainer>
