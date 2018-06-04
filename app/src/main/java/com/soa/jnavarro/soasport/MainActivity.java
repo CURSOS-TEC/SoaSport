@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<SoaPost> mSoaPostList = new ArrayList<SoaPost>();
     //Reference to the  to the firebase DataBase
     DatabaseReference myRef = DBManager.getInstance().getDataBaseReference("news");
+    //Toolbar
+    Toolbar mMainToolbar;
 
 
     private Button mTestBtn;
@@ -52,6 +54,9 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         mLogoutButton = (Button)findViewById(R.id.btn_logout);
+
+        mMainToolbar = (Toolbar) findViewById(R.id.home_toolbar);
+        setSupportActionBar(mMainToolbar);
 
         mLogoutButton.setOnClickListener(new View.OnClickListener() {
             @Override

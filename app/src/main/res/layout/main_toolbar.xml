@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="0dp"
+    android:padding="0px"
+    android:layout_margin="0px"
+    android:visibility="visible"
+    android:contentInsetTop ="0dp"
+    android:contentInsetLeft="0dp"
+    android:contentInsetStart="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    android:contentInsetRight="0dp"
+    android:contentInsetEnd="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetEnd="0dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sea.foam.green"
+            android:padding="0dp">
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/btn_main_menu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@color/sea.foam.green"
+                android:src="@drawable/menu"
+                android:text="Menu"
+                android:layout_weight="1.0"/>
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/btn_main_search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@color/sea.foam.green"
+                android:src="@drawable/search"
+                android:text="Search"
+                android:layout_weight="2.0"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>
