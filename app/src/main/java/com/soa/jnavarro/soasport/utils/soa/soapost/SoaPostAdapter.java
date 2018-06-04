@@ -25,11 +25,11 @@ public class SoaPostAdapter extends RecyclerView.Adapter<SoaPostAdapter.SoaPostV
 
         public SoaPostViewHolder(View itemView) {
             super(itemView);
-            mtextViewShortDesc = itemView.findViewById(R.id.textViewShortDesc);
+            mtextViewShortDesc = itemView.findViewById(R.id.textViewDescription);
             mtextViewTitle = itemView.findViewById(R.id.textViewTitle);
             mtextViewRating = itemView.findViewById(R.id.textViewRating);
-            mtextViewAlt = itemView.findViewById(R.id.textViewAlt);
-            mImageView = itemView.findViewById(R.id.imageView);
+            mtextViewAlt = itemView.findViewById(R.id.textViewRating);
+            mImageView = itemView.findViewById(R.id.imageViewThumbnail);
 
         }
     }
@@ -54,7 +54,7 @@ public class SoaPostAdapter extends RecyclerView.Adapter<SoaPostAdapter.SoaPostV
     @Override
     public SoaPostViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(this.mContext);
-        View view = inflater.inflate(R.layout.list_layout,null);
+        View view = inflater.inflate(R.layout.soa_post,null);
         SoaPostViewHolder holder = new SoaPostViewHolder(view);
         return holder;
     }
