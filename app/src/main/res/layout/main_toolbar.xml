@@ -9,7 +9,7 @@
     android:padding="0px"
     android:layout_margin="0px"
     android:visibility="visible"
-    android:contentInsetTop ="0dp"
+
     android:contentInsetLeft="0dp"
     android:contentInsetStart="0dp"
     app:contentInsetLeft="0dp"
@@ -40,6 +40,15 @@
                 android:text="Menu"
                 android:layout_weight="1.0"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="SoaSport"
+                android:layout_weight="2.0"
+                android:padding="5dp"
+                android:textSize="20dp"/>
+
+
             <android.support.v7.widget.AppCompatImageButton
                 android:id="@+id/btn_main_search"
                 android:layout_width="30dp"
@@ -48,7 +57,7 @@
                 android:background="@color/sea.foam.green"
                 android:src="@drawable/search"
                 android:text="Search"
-                android:layout_weight="2.0"/>
+                android:layout_weight="1.0"/>
         </LinearLayout>
 
     </RelativeLayout>
