@@ -9,17 +9,19 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp">
 
+
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp">
+
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:padding="4dp" />
-
 
 
             <TextView

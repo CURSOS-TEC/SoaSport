@@ -53,9 +53,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try{
-                    FirebaseAuth.getInstance().signOut();
+                    /*FirebaseAuth.getInstance().signOut();
                     Intent myIntent = new Intent(MainActivity.this, AuthActivity.class);
-                    MainActivity.this.startActivity(myIntent);
+                    MainActivity.this.startActivity(myIntent);*/
+                    UserAssistance.getInstance().LogOut(MainActivity.this);
                     MainActivity.this.finish();
                 }catch (Exception e){
                     Toast.makeText(MainActivity.this, " Error during logout.",

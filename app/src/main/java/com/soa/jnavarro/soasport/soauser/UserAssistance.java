@@ -1,11 +1,14 @@
 package com.soa.jnavarro.soasport.soauser;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.soa.jnavarro.soasport.AuthActivity;
 import com.soa.jnavarro.soasport.MainActivity;
 import com.soa.jnavarro.soasport.utils.soa.soaalerts.SoaAlert;
 
@@ -44,5 +47,11 @@ public class UserAssistance {
 
 
         }
+    }
+
+    public void LogOut(Context context ){
+        FirebaseAuth.getInstance().signOut();
+        Intent myIntent = new Intent(context, AuthActivity.class);
+        context.startActivity(myIntent);
     }
 }

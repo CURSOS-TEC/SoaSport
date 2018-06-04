@@ -11,4 +11,12 @@
     <color name="rich.electric.blue">#00A5CF</color>
     <color name="jungle.green">#25A18E</color>
     <color name="green.sheen">#70C1B3</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="feed_bg">#d3d6db</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>
 </resources>
