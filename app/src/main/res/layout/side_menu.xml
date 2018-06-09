@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <item android:id="@+id/nav_home"
+            android:title="@string/menu_item_home"
+            android:icon="@drawable/home">
+            <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/action_click_me" />
+        </item>
+
+        <item android:id="@+id/nav_challenge"
+            android:title="@string/menu_item_challenges"
+            android:icon="@drawable/challenges">
+            <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/action_click_me" />
+        </item>
+
+        <item android:id="@+id/nav_history"
+            android:title="@string/menu_item_history"
+            android:icon="@drawable/history">
+            <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/action_click_me" />
+        </item>
+
+        <item android:id="@+id/nav_settings"
+            android:title="@string/menu_item_settings"
+            android:icon="@drawable/settings">
+            <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/action_click_me" />
+        </item>
+
+
+        <item android:id="@+id/nav_logout"
+            android:title="@string/logOut"
+            android:icon="@drawable/logout">
+            <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action_click_me" />
+        </item>
+
+
+
+
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+            android:textStyle="bold"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp" />
+    </FrameLayout>
+
+
+
+</menu>

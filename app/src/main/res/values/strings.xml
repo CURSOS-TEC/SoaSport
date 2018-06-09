@@ -10,5 +10,12 @@
     <string name="fb_login_protocol_scheme">fb524433627974443</string>
     <string name="logOut">Logout</string>
     <string name="register"> Register </string>
+    <string name="menu_item_chat">Chat</string>
+    <string name="menu_item_challenges">Retos</string>
+    <string name="menu_item_history">Historial</string>
+    <string name="menu_item_home">Noticias</string>
+    <string name="menu_item_settings">Configuraciones</string>
+    <string name="action_click_me">TEST</string>
+
 
 </resources>
