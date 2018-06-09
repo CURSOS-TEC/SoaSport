@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    tools:ignore="ExtraText">
+    tools:ignore="ExtraText"
+    android:id="@+id/maindrawwer">
 
     <!-- Main lay out -->
     <LinearLayout
@@ -13,9 +14,9 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <include
+        <!--<include
             android:id="@+id/home_toolbar"
-            layout = "@layout/main_toolbar"/>
+            layout = "@layout/main_toolbar"/>-->
 
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/btn_logout"
